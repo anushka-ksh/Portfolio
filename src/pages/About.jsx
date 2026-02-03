@@ -49,13 +49,14 @@ export default function About() {
           {/* Tape Effect */}
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-32 h-8 bg-pink-200/50 rotate-2 backdrop-blur-sm shadow-sm opacity-80"></div>
 
-          {/* Profile Photo Placeholder */}
-          <div className="w-40 h-40 bg-gray-100 rounded-2xl mt-8 mb-4 border-4 border-white shadow-lg rotate-2 overflow-hidden relative group">
-             {/* You can add <img src="/your-photo.jpg" /> here later */}
-             <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-sm bg-gray-50 group-hover:bg-gray-100 transition-colors font-bold">
-               (Photo Here)
-             </div>
-          </div>
+          {/* Profile Photo */}
+            <div className="w-40 h-40 bg-gray-100 rounded-2xl mt-8 mb-4 border-4 border-white shadow-lg rotate-2 overflow-hidden relative group">
+            <img 
+                src="/me.png"   /* <--- Make sure this matches your file name in the public folder */
+                alt="Anushka K." 
+                className="w-full h-full object-cover"
+            />
+            </div>
 
           <h1 className="text-4xl font-black text-gray-800 mb-1 tracking-tight">Anushka K.</h1>
           <p className="text-pink-500 font-bold tracking-widest uppercase text-xs mb-8 bg-pink-50 px-3 py-1 rounded-full">
@@ -68,7 +69,7 @@ export default function About() {
               I'm a final-year student at <strong>VIT</strong> obsessed with building scalable backends using <strong>Spring Boot</strong>.
             </p>
             <p>
-              When I'm not debugging Java code, I'm writing content for <em>The Cyber Warriors Club</em> or anchoring live events! 🎤
+              When I'm not debugging Java code, I'm writing content for <em>The Cyber Warriors Club</em> or probably playing basketball or badminton.
             </p>
           </div>
 
@@ -97,23 +98,14 @@ export default function About() {
 
           <div className="space-y-10 pl-4 border-l-2 border-pink-200 ml-2">
             
-            {/* Experience Item 1 */}
-            <div className="relative pl-8">
-              <span className="absolute -left-[21px] top-1 bg-pink-100 text-pink-500 p-2 rounded-full text-xs shadow-sm ring-4 ring-[#fffdf5]">
-                <Briefcase size={16} />
-              </span>
-              <h3 className="font-bold text-lg text-gray-800">Web Dev Intern</h3>
-              <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Quamin Tech Solutions | 2024-25</p>
-              <p className="text-sm text-gray-600 leading-relaxed">Architected backend services & optimized REST APIs for high performance.</p>
-            </div>
 
             {/* Education Item */}
             <div className="relative pl-8">
               <span className="absolute -left-[21px] top-1 bg-blue-100 text-blue-500 p-2 rounded-full text-xs shadow-sm ring-4 ring-[#fffdf5]">
                 <GraduationCap size={16} />
               </span>
-              <h3 className="font-bold text-lg text-gray-800">B.Tech CSE</h3>
-              <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">VIT Vellore | 2026</p>
+              <h3 className="font-bold text-lg text-gray-800">B.Tech Computer Science and Engineering</h3>
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Vellore Institute of Technology | 2026</p>
               <p className="text-sm text-gray-600 leading-relaxed">Current CGPA: <span className="text-green-600 font-bold">8.61/10</span></p>
             </div>
 
@@ -122,9 +114,24 @@ export default function About() {
               <span className="absolute -left-[21px] top-1 bg-yellow-100 text-yellow-600 p-2 rounded-full text-xs shadow-sm ring-4 ring-[#fffdf5]">
                 <Heart size={16} />
               </span>
-              <h3 className="font-bold text-lg text-gray-800">Content Co-Lead</h3>
+              <h3 className="font-bold text-lg text-gray-800">Co-Lead : Content and Editorial Department</h3>
               <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">The Cyber Warriors Club</p>
               <p className="text-sm text-gray-600 leading-relaxed">Managed editorial deadlines & anchored multiple live events.</p>
+              <p className="text-sm text-gray-600 leading-relaxed">Responsible for content creation for sponsorship proposals, event reports, emails and scripts.</p>
+              
+            </div>
+
+            {/* Experience Item 1 */}
+            <div className="relative pl-8">
+              <span className="absolute -left-[21px] top-1 bg-pink-100 text-pink-500 p-2 rounded-full text-xs shadow-sm ring-4 ring-[#fffdf5]">
+                <Briefcase size={16} />
+              </span>
+              <h3 className="font-bold text-lg text-gray-800">Web Development Intern</h3>
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Quamin Tech Solutions | 2024-25</p>
+              <p className="text-sm text-gray-600 leading-relaxed">Architected backend services & optimized REST APIs for high performance.</p>
+              <p className="text-sm text-gray-600 leading-relaxed">Designed and delivered interactive, data-driven dashboard UI using React, improving usability and
+user engagement</p>
+              <p className="text-sm text-gray-600 leading-relaxed">Tech Stack- Java, React, Spring Boot, REST APIs, MySQL</p>
             </div>
 
           </div>
