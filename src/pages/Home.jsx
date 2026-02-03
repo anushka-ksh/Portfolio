@@ -273,13 +273,13 @@ const Home = () => {
              {/* Contact Card */}
              <motion.div variants={itemVars} className="flex-1">
                 <div 
-                   onClick={() => handleCopy('+917666962056', 'phone')}
+                   onClick={() => handleCopy('anushkaakshirsagar@gmail.com', 'email')}
                    className="bg-cream p-5 rounded-2xl shadow-xl hover:-translate-y-1 transition-transform cursor-pointer group text-center border-4 border-white/10 h-full flex flex-col justify-center"
                 >
-                   {copied === 'phone' ? <Check className="mx-auto text-green-600 mb-2" size={24} /> : <Phone className="mx-auto text-cherryCola mb-2" size={24} />}
+                   {copied === 'email' ? <Check className="mx-auto text-green-600 mb-2" size={24} /> : <email className="mx-auto text-cherryCola mb-2" size={24} />}
                    <h3 className="text-cherryCola font-bold text-xs uppercase tracking-widest">Contact</h3>
                    <p className="text-[10px] text-cherryCola/50 mt-1 group-hover:text-cherryCola/80 transition-colors">
-                      {copied === 'phone' ? 'Copied!' : 'Copy Number'}
+                      {copied === 'email' ? 'Copied!' : 'Copy Email'}
                    </p>
                 </div>
              </motion.div>
