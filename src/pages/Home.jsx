@@ -269,7 +269,7 @@ const Home = () => {
                <span className="text-xs font-bold uppercase tracking-widest text-textBrown">Tech Stack</span>
              </div>
              <div className="flex flex-wrap gap-1.5 content-start">
-               {['Java', 'Spring Boot', 'React', 'PostgreSQL', 'AWS', 'Docker', 'Git'].map(s => (
+               {['Java', 'Spring Boot','Spring Security','PostgreSQL','MySQL','MongoDB','RESTful API Development','JPA','Hibernate','MVC Architecture','Postman','Maven', 'React', 'PostgreSQL', 'AWS', 'Docker', 'Git'].map(s => (
                   <span key={s} className="bg-cherryCola text-cream px-2 py-1 rounded text-[10px] font-bold shadow-sm hover:scale-105 transition-transform cursor-default">
                     {s}
                   </span>
