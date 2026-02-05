@@ -50,13 +50,13 @@ export default function About() {
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-32 h-8 bg-pink-200/50 rotate-2 backdrop-blur-sm shadow-sm opacity-80"></div>
 
           {/* Profile Photo */}
-            <div className="w-40 h-40 bg-gray-100 rounded-2xl mt-8 mb-4 border-4 border-white shadow-lg rotate-2 overflow-hidden relative group">
+          <div className="w-40 h-40 bg-gray-100 rounded-2xl mt-8 mb-4 border-4 border-white shadow-lg rotate-2 overflow-hidden relative group">
             <img 
-                src="/me.png"   /* <--- Make sure this matches your file name in the public folder */
+                src={process.env.PUBLIC_URL + "/me.png"}  /* <--- This fixes the path for GitHub Pages */
                 alt="Anushka K." 
                 className="w-full h-full object-cover"
             />
-            </div>
+          </div>
 
           <h1 className="text-4xl font-black text-gray-800 mb-1 tracking-tight">Anushka K.</h1>
           <p className="text-pink-500 font-bold tracking-widest uppercase text-xs mb-8 bg-pink-50 px-3 py-1 rounded-full">
